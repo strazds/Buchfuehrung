@@ -1,0 +1,27 @@
+/* Regel 1 */
+p {
+  color: blue;
+}
+
+/* Regel 2 */
+p.highlight {
+  color: green;
+}
+
+/* Regel 3 */
+p#my-paragraph {
+  color: red;
+}
+
+/* Regel 3 */
+#my-paragraph {
+  color: black;
+}
+
+label.person {
+  font-family: "Courier New", Courier, monospace;
+}
+
+input.person {
+  font-family: "Times New Roman", Times, serif;
+}
