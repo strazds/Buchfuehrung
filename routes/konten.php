@@ -1,5 +1,5 @@
 <?php
-include_once 'db.php';
+include_once '../utils/db.php';
 $pdo = getConnection();
 
 // Konten-Endpunkte
@@ -23,13 +23,13 @@ if ($_SERVER['REQUEST_METHOD'] === 'GET' && isset($_GET['id'])) {
 
 // Konto erstellen
 if ($_POST['_method'] === 'POST') {
-    include_once 'services/konten.php';
+    include_once '../services/konten.php';
     kontoErstellen($pdo, $_POST);
 }
 
 // Konto aktualisieren
 if ($_POST['_method'] === 'PUT' && isset($_GET['id'])) {
-    include_once 'services/konten.php';
+    include_once '../services/konten.php';
     kontoAktualisieren($pdo, $_GET['id'], $_POST);
 }
 

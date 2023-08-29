@@ -1,0 +1,33 @@
+html,
+body {
+  color: #333;
+  background-color: #f6f3ed;
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+
+#layout-container {
+  height: 100%;
+  min-height: 100%;
+  display: flex;
+  border: none;
+  justify-content: center; /* align item horizontally */
+  align-items: center; /* align item vertically */
+}
+
+#layout {
+  width: 30%;
+}
+
+#layout-body {
+}
+
+.vertical-layout {
+  display: flex;
+  flex-direction: column;
+}
+
+.layout {
+  padding: 20px;
+}
