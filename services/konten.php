@@ -1,5 +1,5 @@
 <?php
-header("Content-Type: application/json");
+// header("Content-Type: application/json");
 function kontoErstellen($pdo, $data)
 {
     // Daten aus JSON holen
@@ -14,10 +14,10 @@ function kontoErstellen($pdo, $data)
     try {
         $stmt->execute();
         $response = array("message" => "Konto erfolgreich erstellt");
-        echo json_encode($response);
+        return json_encode($response);
     } catch (PDOException $e) {
         $response = array("message" => "Fehler beim Erstellen des Kontos: " . $e->getMessage());
-        echo json_encode($response);
+        return json_encode($response);
     }
 }
 

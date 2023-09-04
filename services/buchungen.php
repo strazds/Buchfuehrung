@@ -1,5 +1,4 @@
 <?php
-header("Content-Type: application/json");
 function buchungErstellen($pdo, $data)
 {
     // Daten aus JSON holen
@@ -15,11 +14,11 @@ function buchungErstellen($pdo, $data)
 
     try {
         $stmt->execute();
-        $response = array("message" => "Bucungssatz erfolgreich erstellt");
-        echo json_encode($response);
+        $response = array("message" => "Buchungssatz erfolgreich erstellt");
+        return json_encode($response);
     } catch (PDOException $e) {
         $response = array("message" => "Fehler beim Erstellen des Bucungssatzes: " . $e->getMessage());
-        echo json_encode($response);
+        return json_encode($response);
     }
 }
 ?>

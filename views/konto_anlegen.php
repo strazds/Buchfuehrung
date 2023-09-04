@@ -1,14 +1,15 @@
-<form action="http://localhost/projekt1/utils/api.php?endpoint=konten" method="post" target="_blank">
+<form action="./?endpoint=konten&action=konto_anlegen" method="post">
   <input type="hidden" name="_method" value="POST" />
 
-  <label for="KontoName">Konto Name:</label>
-  <input type="text" id="KontoName" name="KontoName" required /><br /><br />
+  <div class="form-group">
+    <label for="KontoName" class="label">Konto Name:</label>
+    <input type="text" id="KontoName" class="input-field" name="KontoName" placeholder="Konto Name" required />
+  </div>
 
-  <label for="KontoTyp">Konto Typ:</label>
-  <input type="text" id="KontoTyp" name="KontoTyp" required /><br /><br />
+  <div class="form-group">
+    <label for="KontoTyp" class="label">Konto Typ:</label>
+    <input type="text" id="KontoTyp" class="input-field" name="KontoTyp" placeholder="Konto Typ" required />
+  </div>
 
-  <input type="submit" value="Konto anlegen" />
+  <input class="button-like-link" type="submit" value="Konto anlegen" />
 </form>
-
-<br>
-<a href="javascript:history.back()">Zurück</a>
