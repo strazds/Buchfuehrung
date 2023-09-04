@@ -3,3 +3,5 @@
 
 <a href="./?action=konto_anlegen">Konto anlegen</a><br />
 <a href="./?action=buchungssatz_speichern">Buchungssatz speichern</a>
+
+<button>Konto anlegen</button>
