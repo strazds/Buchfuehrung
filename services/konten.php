@@ -36,10 +36,10 @@ function kontoAktualisieren($pdo, $kontoID, $data)
     try {
         $stmt->execute();
         $response = array("message" => "Konto erfolgreich aktualisiert");
-        echo json_encode($response);
+        return json_encode($response);
     } catch (PDOException $e) {
         $response = array("message" => "Fehler beim Aktualisieren des Kontos: " . $e->getMessage());
-        echo json_encode($response);
+        return json_encode($response);
     }
 }
 ?>
