@@ -29,7 +29,7 @@ if ($_POST['_method'] === 'POST') {
 
 // Konto aktualisieren
 if ($_POST['_method'] === 'PUT' && isset($_GET['id'])) {
-    include_once '../services/konten.php';
+    include_once './services/konten.php';
     kontoAktualisieren($pdo, $_GET['id'], $_POST);
 }
 

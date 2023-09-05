@@ -1,5 +1,5 @@
 <?php
-// header("Content-Type: application/json");
+
 function kontoErstellen($pdo, $data)
 {
     // Daten aus JSON holen
