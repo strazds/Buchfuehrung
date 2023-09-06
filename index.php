@@ -4,8 +4,6 @@
  Auf Basis der angelegten Konten sollen Buchungssätze gespeichert werden können. 
  Die Buchungen der Konten sollen angezeigt werden können.
 -->
-<?php $api_response = require_once('./utils/api.php'); ?>
-
 <!DOCTYPE html>
 <html lang="en">
 

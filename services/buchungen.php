@@ -17,7 +17,7 @@ function buchungErstellen($pdo, $data)
         $response = array("message" => "Buchungssatz erfolgreich erstellt");
         return json_encode($response);
     } catch (PDOException $e) {
-        $response = array("message" => "Fehler beim Erstellen des Bucungssatzes: " . $e->getMessage());
+        $response = array("message" => "Fehler " . $e->getCode() . " beim Erstellen des Bucungssatzes.");
         return json_encode($response);
     }
 }

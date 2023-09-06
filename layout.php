@@ -1,4 +1,5 @@
 <?php
+$api_response = require_once('./utils/api.php');
 include_once './router/default.router.php';
 $result = getRoute(isset($_GET["action"]) ? $_GET["action"] : "home");
 ?>

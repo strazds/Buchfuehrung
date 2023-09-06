@@ -16,7 +16,7 @@ function kontoErstellen($pdo, $data)
         $response = array("message" => "Konto erfolgreich erstellt");
         return json_encode($response);
     } catch (PDOException $e) {
-        $response = array("message" => "Fehler beim Erstellen des Kontos: " . $e->getMessage());
+        $response = array("message" => "Fehler " . $e->getCode() . " beim Erstellen des Kontos.");
         return json_encode($response);
     }
 }
